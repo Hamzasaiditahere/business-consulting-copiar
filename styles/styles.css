@@ -34,6 +34,6 @@ body {
     margin: 0;
     padding: 20px;
 }
-.header2 nav a {
-    text-decoration: none;
+.header2 nav a ul {
+    justify-content: space-between;
 }
