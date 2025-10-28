@@ -1,0 +1,39 @@
+body {
+    font-family: inherit;
+}
+.header-left {
+    display: flex;
+}
+.header-right {
+    display: flex;
+}
+.header1 {
+    display: flex;
+    justify-content: space-between;
+}
+.header-left img{
+    height: fit-content;
+    padding-top: 21px;
+    margin-left: 10px;
+}
+.header-left p{
+    margin-left: 5px;
+}
+.header2 {
+    display: flex;
+} 
+.header2 img{
+    width: fit-content;
+    height: fit-content;
+}
+.header2 nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+.header2 nav a {
+    text-decoration: none;
+}
