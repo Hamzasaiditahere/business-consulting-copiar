@@ -1,21 +1,40 @@
+/*
+Tipografia para toda la pagina web y margen izquierdo y derecho de 300px para toda la pagina y fondo azul oscuro
+*/
 body {
     font-family: inherit;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: rgb(4, 4, 49)
 }
+/*
+Ponemos el header-left y header-right en display flex para que los elementos esten en la misma linea uno al lado de otro
+*/
 .header-left {
     display: flex;
 }
 .header-right {
     display: flex;
 }
+/*
+Hacemos el header1 con justify-content space-between para que los elementos esten separados y ponemos fondo azul oscuro y texto blanco
+*/
 .header1 {
-    display: flex;
     justify-content: space-between;
+    background-color: rgb(4, 4, 49);
+    color: white;
 }
+/*
+Hacemos que la imagen del header-left tenga un height fit-content y padding top de 21px y margin left de 10px
+*/
 .header-left img{
     height: fit-content;
     padding-top: 21px;
     margin-left: 10px;
 }
+/* 
+Hacemos que el parrafo del header-left tenga un margin left de 5px
+*/
 .header-left p{
     margin-left: 5px;
 }
@@ -34,6 +53,39 @@ body {
     margin: 0;
     padding: 20px;
 }
+
 .header2 nav a ul {
     justify-content: space-between;
+}
+.carro-de-compras{
+    color: brown;
+    width: 30px;
+
+}
+path{
+    fill: black;
+}
+
+.logo-pagina-web{
+    display: flex;
+}
+.header2 ul a{
+    color: black;
+    text-decoration: none;
+}
+.footer {
+    background-color: rgb(38, 38, 209);
+    color: white;
+}
+.header2{
+    display: flex;
+    justify-content: space-between;
+}
+.blanco{
+    background-color: white;
+}
+
+button a{
+    text-decoration: none;
+    color: rgb(30, 30, 184);
 }
