@@ -33,18 +33,20 @@ Hacemos que la imagen del header-left tenga un height fit-content y padding top 
     margin-left: 10px;
 }
 /* 
-Hacemos que el parrafo del header-left tenga un margin left de 5px
-*/
+Hacemos que el parrafo del header-left tenga un margin left de 5px y display flex
+*/ 
 .header-left p{
     margin-left: 5px;
 }
 .header2 {
     display: flex;
 } 
+/*Hacemos que la imagen de la bandera de usa se ajuste a su tamaño para que no se corte y podamos ajustar el tamaño.*/
 .header2 img{
     width: fit-content;
     height: fit-content;
 }
+/*Hacemos que el nav este en display flex ponemos espacio entre ellos y que no tenga estilo y que este verticalemnte en el centro y margen 0 el padding para que se que */
 .header2 nav ul {
     display: flex;
     gap: 10px;
@@ -53,39 +55,72 @@ Hacemos que el parrafo del header-left tenga un margin left de 5px
     margin: 0;
     padding: 20px;
 }
-
+/*Hacemos que los menus esten separados entre ellos por espacio entre ellos.*/
 .header2 nav a ul {
     justify-content: space-between;
 }
+/*Cambiamos el tamaño del carro para que sea 30px*/
 .carro-de-compras{
-    color: brown;
     width: 30px;
-
 }
+/*
+Hacemos que los path del svg sean de color negro
+*/
 path{
     fill: black;
 }
-
+/*
+Hacemos que el logo de la pagina web este en display flex
+*/
 .logo-pagina-web{
     display: flex;
 }
+/*Hacemos que los enlaces del header2 osea del nav sean de color negro y sin subrayado*/ 
 .header2 ul a{
     color: black;
     text-decoration: none;
 }
+/*
+Hacemos que el footer tenga letra blanca y fondo azul
+*/
 .footer {
     background-color: rgb(38, 38, 209);
     color: white;
 }
+/*
+Hacemos que el header2 este en display flex y hacemos que tenga justify content between
+*/
 .header2{
     display: flex;
     justify-content: space-between;
 }
+/*
+
+*/
 .blanco{
     background-color: white;
 }
+/*
 
+*/
 button a{
     text-decoration: none;
     color: rgb(30, 30, 184);
+}
+.container{
+    background-color:white ;
+}
+.seccion-principal{
+    background-image: url(/icons/foto-portatil.jpg);
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.seccion-principal p button{
+    margin-left: 10px;
+}
+.header2{
+    padding: 20px;
 }
