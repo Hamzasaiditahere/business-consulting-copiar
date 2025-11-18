@@ -5,7 +5,8 @@ body {
     font-family: inherit;
     margin-left: 300px;
     margin-right: 300px;
-    background-color: rgb(4, 4, 49)
+    background-color: rgb(4, 4, 49);
+    font-family: sans-serif
 }
 /*
 Ponemos el header-left y header-right en display flex para que los elementos esten en la misma linea uno al lado de otro
@@ -23,6 +24,7 @@ Hacemos el header1 con justify-content space-between para que los elementos este
     justify-content: space-between;
     background-color: rgb(4, 4, 49);
     color: white;
+    display: flex;
 }
 /*
 Hacemos que la imagen del header-left tenga un height fit-content y padding top de 21px y margin left de 10px
@@ -86,6 +88,7 @@ Hacemos que el footer tenga letra blanca y fondo azul
 .footer {
     background-color: rgb(38, 38, 209);
     color: white;
+    padding: 90px;
 }
 /*
 Hacemos que el header2 este en display flex y hacemos que tenga justify content between
@@ -95,32 +98,112 @@ Hacemos que el header2 este en display flex y hacemos que tenga justify content 
     justify-content: space-between;
 }
 /*
-
+Hacemos que el fondo del header2 sea blanco
 */
 .blanco{
     background-color: white;
 }
 /*
-
+Hacemos que los enlaces de los botones sean de color negro
 */
 button a{
     text-decoration: none;
     color: rgb(30, 30, 184);
 }
+/*
+Hacemos que el contenedor principal tenga un fondo blanco
+*/
 .container{
     background-color:white ;
 }
-.seccion-principal{
-    background-image: url(/icons/foto-portatil.jpg);
-    height: 770px;
+/*
+Hacemos que la sección principal tenga un fondo blanco
+*/
+.seccion-principal {
+    height: 100% !important;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    padding-left: 250px;
 }
+/*
+Hacemos que los párrafos dentro de la sección principal tengan un margen inferior de 10px
+*/
 .seccion-principal p button{
     margin-left: 10px;
 }
+/*
+Hacemos que los botones dentro de la sección principal tengan un margen inferior de 10px
+*/
+.seccion-principal button{
+    width: fit-content;
+}
+/*
+Hacemos que el header2 tenga un padding de 20px
+*/
 .header2{
     padding: 20px;
+}
+/*
+Hacemos que la lupa de busqueda tenga un width de 30px
+*/
+.lupa-busqueda{
+    width: 30px;
+}
+/*
+Hacemos que la imagen de fondo tenga una imagen de fondo y un height de 780px
+*/
+.imagen-de-fondo{
+    background-image: url(/icons/foto-portatil.jpg);
+    height: 780px;
+}
+/*
+Hacemos que el header-right tenga el texto de color blanco
+*/
+.header-right{
+    color: white;
+}
+/*
+Hacemos que el footer este en display flex y con un gap de 10px entre los elementos
+*/
+.footer{
+    display: flex;
+    gap: 10px;
+}
+/*
+Hacemos que los botones del footer sean de color azul oscuro y fondo blanco y sin borde y con bordes redondeados
+*/
+.footer button{
+    color: rgb(16, 16, 138);
+    font-weight: bold;
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+}
+/*
+Hacemos que los h1 de la sección principal sean de tamaño 50px y color azul oscuro y negrita
+*/
+h1{
+    font-size: 50px;
+    color: rgb(16, 16, 138);
+    font-weight: bold;
+}
+/*
+Hacemos que los botones de la sección principal tengan padding de 20px y color azul oscuro y negrita y fondo blanco y sin borde y con bordes redondeados
+*/
+.seccion-principal button{
+    padding: 20px;
+    color: rgb(16, 16, 138);
+    font-weight: bold;
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+}
+/*
+Hacemos que los párrafos de la sección principal sean de tamaño 20px y color azul oscuro
+*/
+.seccion-principal p{
+    font-size: 20px;
+    color: rgb(16, 16, 138);
 }
